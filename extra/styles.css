@@ -15,6 +15,7 @@ body {
 a {
   color: rgb(0, 145, 255);
   transition: color 0.3s ease-in-out;
+  text-underline-offset: 3px;
 }
 
 a:hover {
@@ -48,6 +49,13 @@ a:active {
 
 .brand {
   font-size: 16px;
+  color: black !important;
+  text-decoration: none;
+}
+.brand:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 #navbar-list > li {
@@ -56,6 +64,7 @@ a:active {
 
 #navbar-list > li > a {
   font-size: 14px;
+  text-underline-offset: 3px;
 }
 
 #content {
@@ -102,7 +111,7 @@ h4 {
   text-overflow: clip;
 }
 
-#feed-grid {
+#stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -124,6 +133,18 @@ h4 {
   color: gray !important;
 }
 
+#cover-image-container {
+  display: grid;
+  grid-template: 252px 252px / 252px 252px;
+  justify-content: start;
+  align-items: start;
+}
+
+#cover-image {
+  width: 240px;
+  height: 240px;
+}
+
 @media (max-width: 768px) {
   body {
     display: flex;
@@ -143,7 +164,7 @@ h4 {
     margin-bottom: 20px;
   }
 
-  #feed-grid {
+  #stats-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -152,5 +173,19 @@ h4 {
 
   #page-footer {
     margin-left: 0 !important;
+  }
+
+  #cover-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 90vw);
+    justify-items: start;
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+
+  #cover-image {
+    width: 90vw;
+    height: 90vw;
   }
 }
