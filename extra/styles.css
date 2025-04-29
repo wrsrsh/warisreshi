@@ -1,0 +1,85 @@
+:root {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: grid;
+  align-items: start;
+  padding: 40px;
+  grid-template-columns: 20vw 1fr;
+}
+
+#navbar-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.brand {
+  font-size: 16px;
+}
+
+#navbar-list > li {
+  list-style: none;
+}
+
+#navbar-list > li > a {
+  color: rgb(0, 145, 255);
+  font-size: 14px;
+}
+
+#content {
+  padding: 0;
+  margin: 0;
+}
+
+#home-quote-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#home-quote-list {
+  padding: 0;
+  margin: 0;
+}
+
+#home-quote-list > li {
+  list-style: "\2192";
+  margin-bottom: 7px;
+}
+
+h4 {
+  margin: 1px;
+  font-weight: 600
+}
+
+#about-interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#about-interests-list > li > span {
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  #navbar-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
