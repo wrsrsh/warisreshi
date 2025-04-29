@@ -30,7 +30,7 @@ a:active {
   color: rgb(0, 100, 175);
 }
 
-nav {
+#page-navbar {
   display: flex;
   margin: 0;
   padding: 0;
@@ -114,13 +114,13 @@ h4 {
   margin-top: 40px;
 }
 
-footer {
+#page-footer {
   margin-left: 15rem !important;
   width: 100%;
   color: gray !important;
 }
 
-footer a {
+#page-footer > a {
   color: gray !important;
 }
 
