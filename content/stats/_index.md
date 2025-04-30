@@ -1,3 +1,0 @@
-+++
-title = "(stats) waris reshi"
-+++
